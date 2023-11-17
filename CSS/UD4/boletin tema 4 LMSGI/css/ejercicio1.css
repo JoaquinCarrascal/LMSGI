@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+#rotuloDeCabecera{
+    text-align: center;
+    width: 1250px;
+    height: 250px;
+    margin:0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35pt;
+    color:rgb(45, 83, 115);
+    border-width: 5px;
+    border-color: rgb(45, 83, 115);
+    border-style: dotted;
+    border-radius: 25px;
+    background-color: rgb(188, 255, 232);
+    padding: 25px;
+}

@@ -1,0 +1,2 @@
+Buenas , Rafael!
+Aqui le dejo mis ejercicios del Boletín nº1, tenga en cuenta solamente que el archivo.html que almacena el índice que le manda a cada ejercicio tiene el nombre de "Hoja de guía EJPT1.html".
