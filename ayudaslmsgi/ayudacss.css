@@ -1,0 +1,45 @@
+selectores: de etiqueta
+            de clase (class) '.clase'
+            de identificador (id) '#identificador'
+
+notacion de colores
+{
+    nombre
+    rgb(r,g,b)
+    #rrggbb //en hexadecimal//
+    rgba(r,g,b,a) //'a' hace referencia a la transparencia varía entre 0 y 1//
+}
+
+FUENTES
+@font-face {
+    font-family: "Fuente personalizada";
+    src: url('../font/Fuente personalizada.ttf');
+}
+//ahora ya se podría incluir la fuente importada 'Fuente personalizada'//
+{
+    font-family: 'Con comillas si tiene espacios', sinnadasivajunto;
+}
+
+{
+font-style: italic,oblique/la fuente normal pero inclinada/;
+font-variant:small-caps/las minúsculas son pequñas mayúsculas/;
+font-weight:bold/negrita/,bolder,lighter,o un valor numérico entre 100 y 900;
+font-size: pt,px,em,smaller,larger/elemento padre/;
+se puede agrupar todo en la propiedad font:
+ej: font: Arial,sans-serif 1.2em/1.5 bold italic small-caps;
+1.5 separado con barra es el interlineado
+}
+
+{
+color:en cualquier notación;
+text-decoration:none/para quitar el underline a un enlace/;
+text-transform:capitalize,uppercase,lowercase;
+text-indent:tabulacion de la primera línea;
+letter-spacing:;
+word-spacing:;
+line-height:;
+text-align:;
+vertical-align
+direction:ltr,rtl;
+width/height:;
+}

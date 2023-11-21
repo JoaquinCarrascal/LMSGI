@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #envoltorio {
+            margin: 0 auto;
+            width: 80%;
+        }
+        #envoltorio header{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(131, 198, 253);
+        }
+        #envoltorio header *{
+            text-align: center;
+            list-style-type: none;
+        }
+        #envoltorio header nav{
+            display: flex;
+            justify-content: space-around;
+            /*border: 3px solid blue;*/
+            background-color: rgb(177, 218, 253);
+            min-height: 25px;
+            padding: 3px;
+        }
+        #envoltorio #contenido{
+            display: flex;
+            align-items: stretch;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        #contenido aside{
+            padding: 5px;
+        }
+        #contenido main{
+            flex: 1 1 60%;
+            padding: 5px;
+        }
+        #contenido #asizq{
+            flex: 1 1 20%;
+            background-color: rgb(216, 237, 255);
+            position: relative;
+        }
+        #contenido #asdech{
+            flex: 1 1 20%;
+            background-color: rgb(216, 237, 255);
+        }
+        #envoltorio footer{
+            text-align: center;
+            background-color: rgb(216, 255, 242);
+            min-height: 25px;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="envoltorio">
+        <header>
+            <h1>Mi primer layout</h1>
+            <nav>
+                <li>Inicio</li>
+                <li>Quiénes somos</li>
+                <li>Qué hacemos</li>
+                <li>Dónde estamos</li>
+                <li>Contacto</li>
+            </nav>
+        </header>
+        <div id="contenido">
+            <aside id="asizq">
+                <p>Últimas noticias
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Amet sequi voluptas repellendus ex quos aspernatur reiciendis
+                    sunt nemo dolorem temporibus dolorum, quo, ad rem eligendi nulla, possimus
+                    repudiandae commodi aliquid.
+                </p>
+            </aside>
+            <main>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+
+                vLorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur 
+                earum repellendus nam, eveniet laboriosam iusto, vel, cupiditate voluptates magni 
+                veniam! Fugiat nemo assumenda reiciendis laboriosam cumque maiores quibusdam at?
+                </p>
+            </main>
+            <aside id="asdech">
+                <p>Penúltimas noticias
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Amet sequi voluptas repellendus ex quos aspernatur reiciendis
+                    sunt nemo dolorem temporibus dolorum, quo, ad rem eligendi nulla, possimus
+                    repudiandae commodi aliquid.
+                </p>
+        </div>
+        <footer>
+            <p>Primero DAM</p>
+        </footer>
+    </div>
+</body>
+</html>
