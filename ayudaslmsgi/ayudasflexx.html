@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexx</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .selector1 .selector2{
+            /*selector que está anidado dentro*/
+        }
+        .selector1>.selector2{
+            /*selector que sea hijo directo*/
+        }
+        .selector1+.selector2{
+            /*hermanos adyacentes*/
+        }
+        #ejemploDIMENSIONES{
+            /*Dimensiones*/
+            width/*height*/: 10%;/*Permite colocar máximos y mínimos*/
+            padding: 3px; /*se le pueden pasar los mismos argumentos que al margin*/
+            margin: 0 auto;/*0 arriba y abajo, auto para laterales = centrado
+                            4 valores = top right bottom left
+                            3 valores = top right/left bottom
+                            2 valores = top/bottom right/left*/
+            border: 5px red solid;/*1 grosor(border-width), 2 color(border-color), 3 estilo(border-style)*/
+            border-radius: 5px 5px;/*Se indica con porcentaje o longitud eje (x y)
+                                    También se puede dar individualmente border-top-left-radius*/
+        }
+        #fondoCAJAS{
+            background-color: aliceblue;
+            background-image: url(ruta_imagen_mas_cercana),url(mas_lejana);
+            background-repeat: no-repeat;/*para repetir patrones cambiar a repeat*/
+            background-position: 10px 30px; /*Dos valores de longitud, porcentaje o
+                                            'literales' top, bottom, right top, center bottom*/
+            background-attachment: scroll/* también: fixed*/;
+            background-size: 20px, 30px, cover/*contain*/;/*Dos valores para cada foto en este caso*/
+        }
+        #visualizacionCAJAS{
+            display: block;/*Puede convertir un elemento de bloque en linea y viceversa
+                            o dejar de mostrarlo con none, los demás se amoldará a que no está*/
+            visibility: visible;/*puede estar en hidden pero ocupando su hueco*/
+            overflow: scroll/*visible o hidden*/;
+        }
+        #tradicional{
+            position:relative;/*absolute fixed*/
+            top: 20px;/*en cualquier eje, se mueve el bloque*/
+        }
+        #tridimensionalINDEX{
+            z-index: 20;/*el más alto estará más arriba*/
+        }
+        #flexxx{
+            display: flex;
+            flex-direction: row;/*direccion de los elementos*//*column*/
+            flex-wrap: nowrap;/*elementos en la misma línea a unque no quepan, wrap lo pone en la de abajo*/
+            justify-content: flex-start;/*flex-end=derecha, center,
+                                        space-between=puntas y medio,space-around=bonito*/
+            align-items: stretch;/*flex-start,flex-end,center*/
+            align-content: center;/*flex-start,flex-end,space-between,...*/
+            
+            flex-grow: 1;/*crecimiento del elemento*/
+            flex-shrink: 1;/*contraccion del elemento*/
+            flex-basis: 50%;/*tamaño del elemento antes de repartirse el espacio*/
+            /*flex: grow-factor shrink-factor flex-basis-value;*/
+
+            align-self: flex-end;/*para controlar el de un solo elemento*/
+        }
+    </style>
+</head>
+<body>
+    
+    <header>encabezado del sitio web</header>
+    <nav>Menú de navegación</nav>
+    <footer>Pie de página</footer>
+    <aside>contenido lateral</aside>
+    
+    <main>Marca el contenido principal del la página</main>
+    <!--Ambos se escriben en el main-->
+    <section>Delimita el contenido</section>
+    <article>Contenido con una identidad independiente</article>
+
+    
+    
+
+</body>
+</html>
