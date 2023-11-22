@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexx</title>
-    <style>
+    <style type="text/css">
         *{
             box-sizing: border-box;
         }
@@ -54,9 +54,10 @@
         #flexxx{
             display: flex;
             flex-direction: row;/*direccion de los elementos*//*column*/
-            flex-wrap: nowrap;/*elementos en la misma línea a unque no quepan, wrap lo pone en la de abajo*/
             justify-content: flex-start;/*flex-end=derecha, center,
                                         space-between=puntas y medio,space-around=bonito*/
+
+            flex-wrap: nowrap;/*elementos en la misma línea a unque no quepan, wrap lo pone en la de abajo*/
             align-items: stretch;/*flex-start,flex-end,center*/
             align-content: center;/*flex-start,flex-end,space-between,...*/
             
