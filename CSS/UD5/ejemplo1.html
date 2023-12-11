@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo1</title>
+
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        #envoltorio{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        #envoltorio #botonera{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row; 
+        }
+        #envoltorio #botonera a{
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            list-style: none;
+            display: block;
+            flex: 1 1 100%;
+            margin: 0px auto;
+            border: solid pink 1px;
+            text-align: center;
+            background-color: rgb(255, 189, 189);
+            text-decoration: none;
+            color: black;
+        }
+        #envoltorio #botonera a:hover {
+            background-color: rgb(255, 252, 250);
+        }
+        #envoltorio section{
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+            border: pink solid 1px;
+            display: none;
+        }
+        #envoltorio section:target{
+            border: pink solid 1px;
+            display: inherit;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="envoltorio">
+        <div id="botonera">
+                <a href="#boton1"><li>boton 1</li></a>
+                <a href="#boton2"><li>boton 2</li></a>
+                <a href="#boton3"><li>boton 3</li></a>
+                <a href="#boton4"><li>boton 4</li></a>
+                <a href="#boton5"><li>boton 5</li></a>
+        </div>
+
+        <section id="boton1">
+        <p>
+            boton 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Minus hic earum distinctio illum voluptatem omnis neque 
+            sunt quo quod repellendus iure obcaecati quidem totam 
+            a, magnam voluptatibus quibusdam saepe ducimus!
+        </p>
+        </section>
+        <section id="boton2">
+            <p>
+                boton 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Minus hic earum distinctio illum voluptatem omnis neque 
+                sunt quo quod repellendus iure obcaecati quidem totam 
+                a, magnam voluptatibus quibusdam saepe ducimus!
+            </p>
+            </section>
+            <section id="boton3">
+                <p>
+                    boton 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Minus hic earum distinctio illum voluptatem omnis neque 
+                    sunt quo quod repellendus iure obcaecati quidem totam 
+                    a, magnam voluptatibus quibusdam saepe ducimus!
+                </p>
+                </section>
+                <section id="boton4">
+                    <p>
+                        boton 4 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Minus hic earum distinctio illum voluptatem omnis neque 
+                        sunt quo quod repellendus iure obcaecati quidem totam 
+                        a, magnam voluptatibus quibusdam saepe ducimus!
+                    </p>
+                    </section>
+                    <section id="boton5">
+                        <p>
+                            boton 5 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Minus hic earum distinctio illum voluptatem omnis neque 
+                            sunt quo quod repellendus iure obcaecati quidem totam 
+                            a, magnam voluptatibus quibusdam saepe ducimus!
+                        </p>
+                        </section>
+    </div>
+
+
+</body>
+
+</html>
