@@ -8,28 +8,78 @@
         *{
             box-sizing: border-box;
         }
-        div{
+        .normie{
+            border: solid 1px;
+            width: 100px;
+            text-align: center;
+            background-color: lightblue;
+            color: blue;
+            transition: all 1s;
+            margin: 150px auto;
+            animation-name: frio;
+            animation-duration: 0.05s;
+            animation-iteration-count: infinite;
+        }
+        .animation{
             border: solid 1px;
             width: 100px;
             text-align: center;
             background-color: green;
             color: white;
-            transition: all 1s;
-            margin: 150px auto;
+            position: relative;
+            animation-name: cuadradosYcolores;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-fill-mode:backwards;
+            animation-iteration-count: infinite;
         }
-        div:hover{
+        .normie:hover{
             /*transform: scale(1.55);*/
             /*transform: skewY(20deg);*/
             /*transform: rotate(360deg);*/
             transform: skewX(180deg);
-
         }
+        @keyframes cuadradosYcolores{
+            0%{
+                background-color: aliceblue;
+                top:0px;
+                left:0px;
+            }
+            50%{
+                background-color: aquamarine;
+                top:0px;
+                left: 100px;
+                rotate: 360deg;
+            }
+            100%{
+                background-color: azure;
+                top:0px;
+                left:0px;
+            }
+        }
+        
+        @keyframes frio{
+            0%{
+                rotate:3deg;
+                color: antiquewhite;
+                background-color: aqua;
+            }
+            100%{
+                rotate:-3deg;
+                background-color: azure;
+                color:blue;
+            }
+        }
+
 
     </style>
 </head>
 <body>
-    <div>
-        <p>Una caja</p>
+    <div class="normie">
+        <p>Una caja con frío</p>
+    </div>
+    <div class="animation">
+        <p>Otra caja</p>
     </div>
 </body>
 </html>
