@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+
+    
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .menunav nav{
+            display: flex;
+            list-style-type: none;
+            list-style-position: inside;
+            flex-flow: row;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+            width: 90%;
+        }
+        li{
+            text-align: center;
+            border: solid 0.5px rgb(198, 197, 197);
+            padding: 10px 7px;
+            flex: 1 1 100%;
+            color:rgb(89, 88, 88);
+            font-weight: 600;
+            font-size: smaller;
+            background-color: rgb(227, 226, 226);
+            min-height: 30px;
+            font-size: 19px;
+        }
+        li:first-child{
+            border-top-left-radius: 34px 100% ;
+            border-bottom-left-radius: 34px 100%;
+        }
+        li:last-child{
+            border-top-right-radius: 34px 100% ;
+            border-bottom-right-radius: 34px 100%;
+        }
+        li:hover{
+            background-image: repeating-linear-gradient(180deg,rgb(112, 112, 112),rgb(53, 53, 53));
+            color:rgb(255, 255, 255);
+            border: solid 0.5px rgb(198, 197, 197);
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="menunav">
+
+        <nav>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </nav>
+
+    </div>
+
+</body>
+</html>
