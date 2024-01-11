@@ -20,33 +20,51 @@
             flex-flow: row;
             flex-direction: row;
             flex-wrap: nowrap;
-            margin: 0 auto;
-            width: 90%;
+            min-height: 180px;
+            max-height: 180px;
         }
+
         li{
             text-align: center;
             border: solid 0.5px rgb(198, 197, 197);
-            padding: 10px 7px;
             flex: 1 1 100%;
             color:rgb(89, 88, 88);
-            font-weight: 600;
-            font-size: smaller;
             background-color: rgb(227, 226, 226);
-            min-height: 30px;
-            font-size: 19px;
+            background-image: url(./redi.jpg);
+            background-repeat: no-repeat;
+            background-size: 400px 750px;
+            min-width: 200px;
+            max-width: 200px;
         }
         li:first-child{
-            border-top-left-radius: 34px 100% ;
-            border-bottom-left-radius: 34px 100%;
+            background-position: 0px 0px;
         }
-        li:last-child{
-            border-top-right-radius: 34px 100% ;
-            border-bottom-right-radius: 34px 100%;
+        li:hover:first-child{
+            background-position: -200px 0px;
         }
-        li:hover{
-            background-image: repeating-linear-gradient(180deg,rgb(112, 112, 112),rgb(53, 53, 53));
-            color:rgb(255, 255, 255);
-            border: solid 0.5px rgb(198, 197, 197);
+        li:nth-child(2){
+            background-position: 0px -145px;
+        }
+        li:hover:nth-child(2){
+            background-position: -200px -145px;
+        }
+        li:nth-child(3){
+            background-position: 0px -280px;
+        }
+        li:hover:nth-child(3){
+            background-position: -200px -280px;
+        }
+        li:nth-child(4){
+            background-position: 0px -420px;
+        }
+        li:hover:nth-child(4){
+            background-position: -200px -420px;
+        }
+        li:nth-child(5){
+            background-position: 0px -560px;
+        }
+        li:hover:nth-child(5){
+            background-position: -200px -560px;
         }
         
     </style>
@@ -57,7 +75,6 @@
     <div class="menunav">
 
         <nav>
-            <li></li>
             <li></li>
             <li></li>
             <li></li>
