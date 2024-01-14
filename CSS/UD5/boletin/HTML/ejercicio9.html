@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio9</title>
+
+    <style type="text/css">
+
+        *{
+            box-sizing: border-box;
+        }
+
+    .contenido{
+        display: flex;
+        background-color: rgb(51, 51, 51);
+        height: 70px;
+        border-radius: 20px;
+    }
+    .dech-menu ul{
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        margin: 0px;
+        padding-left: 0px;
+        background-color: rgb(219, 219, 219);
+        position: absolute;
+        right: 8px;
+    }
+    .dech-menu ul>li{
+        height: 70px;
+    }
+    .izq-menu{
+        
+        display: flex;
+        flex-direction: row;
+    }
+    .izq-menu img{
+     width: 150px;
+     position: absolute;
+     z-index: 0;
+    }
+
+    .izq-menu ul{
+        display: flex;
+        margin: 0px;
+        padding-left: 0px;
+        background-color: rgb(219, 219, 219);
+        z-index: 1;
+        position: relative;
+        left: 45px;
+        transition: 0.5s all;
+    }
+    .contenido,ul,li:first-child{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    li:hover{
+        background-color: rgb(141, 141, 141);
+    }
+    ul>li{
+        flex: 1 1 100%;
+        list-style: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .izq-menu>img:hover+#test{
+        left: 150px;
+        
+    }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="contenido">
+    
+<div class="izq-menu">
+
+    <img src="../IMG/microsoft logo.jpeg">
+
+    <ul id="test">
+        <li>Home</li>
+        <li>About us</li>
+        <li>New Products</li>
+    </ul>
+
+</div>
+<div class="dech-menu">
+
+    <ul id="test">
+        <li>Log out</li>
+        <li>Settings</li>
+        <li>Merch</li>
+    </ul>
+
+</div>
+
+</div>
+
+</body>
+</html>

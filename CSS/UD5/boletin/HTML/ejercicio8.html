@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio8</title>
+
+    <style type="text/css">
+
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        nav>ul{
+            display: flex;
+            list-style: none;
+            padding-left: 0px;
+            align-items: center;
+            width: 50%;
+            flex-direction: column;
+            position: absolute;
+        }
+        nav>ul>li{
+            width: 300px;
+            flex: 1 1 100%;
+            padding: 20px;
+            background-color: rgb(255, 239, 220);
+            border: solid 0.5px black;
+        }
+        nav>ul>li>ul{
+        display: flex;
+        flex-direction: column;
+        }
+
+        nav>ul>li:hover>ul>li{
+            list-style: none;
+            width: 299.5px;
+            height: 60px;
+            padding: 20px;
+            border: solid 0.5px black;
+            background-color: rgb(253, 253, 253);
+            position: relative;
+            left: -60px;
+            top: 20px;
+            transition: all 0.2s;
+        }
+        nav>ul>li>ul>li{
+            list-style: none;
+            width: 0px;
+            height: 0px;
+            padding: 0px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        nav>ul>li>ul>li:hover{
+            background-color: rgb(199, 199, 199);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li>
+                Perfil
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                    <li>submenu4</li>
+                    <li>submenu5</li>
+                </ul>
+            </li>
+            <li>
+                Home
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                    <li>submenu4</li>
+                    <li>submenu5</li>
+                </ul>
+            </li>
+            <li>
+                Ajustes
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                    <li>submenu4</li>
+                    <li>submenu5</li>
+                </ul>
+            </li>
+            <li>
+                Información
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                    <li>submenu4</li>
+                    <li>submenu5</li>
+                </ul>
+            </li>
+            <li>
+                Salir
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                    <li>submenu4</li>
+                    <li>submenu5</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>
