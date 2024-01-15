@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Super Summer Personal Use';
+    src: url(../font/Super\ Summer\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family: 'Blantik';
+    src: url(../font/Blantik.ttf);
+}
+
+body {
+    background-color: rgb(255, 243, 212);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+p {
+    font-size: 4em;
+    word-spacing: 2.5em;
+}
+
+h1 {
+    font-family: 'Super Summer Personal Use';
+    font-size: 5em;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    text-shadow: 10px 10px 10px rgb(255, 123, 0);
+    color: rgb(255, 241, 241);
+}
+
+h2 {
+    font-style: italic;
+}
+
+.forte {
+    font-family: Forte;
+    text-shadow: 10px 10px 10px rgb(255, 196, 196);
+    color: rgb(255, 0, 0);
+}
+
+.summer {
+    font-family: 'Super Summer Personal Use';
+    color: rgb(0, 184, 107);
+    text-shadow: 10px 10px 10px rgb(210, 255, 236);
+}
+
+.blantik {
+    font-family: 'Blantik';
+    color: rgb(0, 43, 184);
+    text-shadow: 10px 10px 10px rgb(171, 193, 255);
+}
+
+.kristen {
+    font-family: 'Kristen ITC';
+    color: rgb(255, 199, 14);
+    text-shadow: 10px 10px 10px rgb(255, 233, 32);
+}
+
+.joker {
+    font-family: Jokerman;
+    color: rgb(255, 14, 255);
+    text-shadow: 10px 10px 10px rgb(255, 199, 255);
+}
+
+.ravies {
+    font-family: Ravie;
+    color: rgb(143, 255, 14);
+    text-shadow: 10px 10px 10px rgb(203, 255, 198);
+}
+
+.gothic {
+    font-family: 'Showcard Gothic';
+    color: rgb(14, 179, 255);
+    text-shadow: 10px 10px 10px rgb(198, 227, 255);
+}
+
+.matura {
+    font-family: 'Matura MT Script Capitals';
+    color: rgb(86, 14, 255);
+    text-shadow: 10px 10px 10px rgb(220, 198, 255);
+}

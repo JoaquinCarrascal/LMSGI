@@ -1,0 +1,16 @@
+h1 {
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1, 5em;
+    text-align: center;
+    background-color: rgba(240, 10, 10, 0.6);
+}
+
+a.tituenla {
+    text-decoration: none;
+    color: tomato;
+}
+
+a {
+    color: sienna;
+}

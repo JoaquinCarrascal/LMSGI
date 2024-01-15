@@ -1,0 +1,39 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(225, 225, 225);
+}
+
+h1 {
+    background-color: blanchedalmond;
+    font-variant: small-caps;
+    text-align: center;
+    font-style: italic;
+    width: 45%;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    font-size: 13pt;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    width: 40%;
+}
+
+p#nombreautor {
+    text-align: right;
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
