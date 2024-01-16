@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio11</title>
+
+    <style type="text/css">
+
+        *{
+            box-sizing: border-box;
+            background-color: slategray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        @keyframes reloj{
+            0%{
+                rotate:0deg;
+            }
+            10%{
+                rotate:36deg;
+            }
+            20%{
+                rotate:72deg;
+            }
+            30%{
+                rotate:108deg;
+            }
+            40%{
+                rotate:144deg;
+            }
+            50%{
+                rotate:180deg;
+            }
+            60%{
+                rotate:216deg;
+            }
+            70%{
+                rotate:252deg;
+            }
+            80%{
+                rotate:288deg;
+            }
+            90%{
+                rotate:324deg;
+            }
+            100%{
+                rotate:360deg;
+            }
+        }
+
+        .contenido{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .boton{
+            width:150px;
+            height: 90px;
+            border: 1px black solid;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            flex: 1 1 100%;
+            border-radius: 10px;
+        }
+        .boton,p{
+            background-color: aliceblue;
+            font-size: 20pt;
+        }
+        .boton:hover p{
+            background-color: rgb(7, 255, 193);
+        }
+        .boton:hover {
+            background-color: rgb(7, 255, 193);
+        }
+        .reloj{
+            margin: 100px auto;
+            flex: 1 1 100%;
+            align-items: center;
+        }
+        .reloj>img{
+            width: 350px;
+            animation:forwards reloj 60s linear;
+            animation-play-state: paused;
+        }
+
+        .boton:hover+.reloj>img{
+            animation-play-state: running;
+        }
+        
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="contenido">
+
+        <div class="boton">
+            <p>Pulsador</p>
+        </div>
+        <div class="reloj">
+            <img src="../IMG/circulo con flecha.png">
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio5</title>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        #envoltorio {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #envoltorio #botonera nav {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        #envoltorio #botonera nav a {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            list-style: none;
+            display: block;
+            flex: 1 1 100%;
+            padding: 10px;
+            border: solid rgb(0, 132, 255) 1px;
+            border-bottom: white solid 1px;
+            text-align: center;
+            background-image: linear-gradient(to right top, rgb(0, 132, 255) 10%, white 90%);
+            text-decoration: none;
+            color: black;
+        }
+
+        #envoltorio #botonera nav a:hover {
+            background-image: linear-gradient(to top, white 20%, rgb(0, 132, 255) 100%);
+        }
+
+        #envoltorio section {
+            margin: 0 auto;
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+        }
+
+        #envoltorio section:target {
+            border-right: rgb(0, 132, 255) solid 1px;
+            border-left: rgb(0, 132, 255) solid 1px;
+            border-bottom: rgb(0, 132, 255) solid 1px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: inherit;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="envoltorio">
+        <div id="botonera">
+            <nav>
+                <a href="#boton1">
+                    <li>Inicio</li>
+                </a>
+                <a href="#boton2">
+                    <li>Quienes somos</li>
+                </a>
+                <a href="#boton3">
+                    <li>Dónde estamos</li>
+                </a>
+                <a href="#boton4">
+                    <li>Noticias</li>
+                </a>
+                <a href="#boton5">
+                    <li>Descargas</li>
+                </a>
+                <a href="#boton6">
+                    <li>Galería de fotos</li>
+                </a>
+                <a href="#boton7">
+                    <li>Contacto</li>
+                </a>
+            </nav>
+        </div>
+
+        <section id="boton1">
+            <h2>Bienvenido a la web</h2>
+            <p>
+                En esta sección encontramos el contenido principal de nuestra página web,
+                así como sus diversas funcionalidades y mas recientes productos.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus 
+                consectetur cupiditate quia autem earum aliquam perferendis quae eos 
+                nostrum dolorem, recusandae dolorum, totam modi accusantium velit iusto 
+                cum ipsa? Quibusdam.
+            </p>
+        </section>
+        <section id="boton2">
+            <h2>Breve resumen de quiénes somos</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                consectetur cupiditate quia autem earum aliquam perferendis quae eos
+                nostrum dolorem, recusandae dolorum, totam modi accusantium velit iusto
+                cum ipsa? Quibusdam.
+            </p>
+        </section>
+        <section id="boton3">
+            <h2>Aquí mostramos donde se encuentra nuestra empresa:</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                consectetur cupiditate quia autem earum aliquam perferendis quae eos
+                nostrum dolorem, recusandae dolorum, totam modi accusantium velit iusto
+                cum ipsa? Quibusdam.
+            </p>
+        </section>
+        <section id="boton4">
+            <h2>Noticias más destacadas de la semana</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                consectetur cupiditate quia autem earum aliquam perferendis quae eos
+                nostrum dolorem, recusandae dolorum, totam modi accusantium velit iusto
+                cum ipsa? Quibusdam.
+            </p>
+        </section>
+        <section id="boton5">
+            <h2>Apartado de descargas</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                consectetur cupiditate quia autem earum aliquam perferendis quae eos
+                nostrum dolorem, recusandae dolorum, totam modi accusantium velit iusto
+                cum ipsa? Quibusdam.
+            </p>
+        </section>
+        <section id="boton6">
+            <h2>Galería de fotos de la web</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                consectetur cupiditate quia autem earum aliquam perferendis quae eos
+                nostrum dolorem, recusandae dolorum, totam modi accusantium velit iusto
+                cum ipsa? Quibusdam.
+            </p>
+        </section>
+
+        <section id="boton7">
+            <h2>Contacta con nosotros</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                consectetur cupiditate quia autem earum aliquam perferendis quae eos
+                nostrum dolorem, recusandae dolorum, totam modi accusantium velit iusto
+                cum ipsa? Quibusdam.
+            </p>
+        </section>
+    </div>
+
+
+
+</body>
+
+</html>
