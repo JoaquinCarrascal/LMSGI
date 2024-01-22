@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1</title>
+
+    <style type="text/css">
+
+        *{
+            box-sizing: border-box;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            width: 500px;
+            margin: 10px auto;
+        }
+        td{
+            padding: 4px;
+            border: solid 1px black;
+        }
+        thead>tr{
+            border-bottom: solid 2px black;
+            background-color: rgb(202, 201, 201);
+        }
+        #col-plazas{
+            background-color: rgb(241, 239, 239);
+        }
+        tbody>tr>td:first-of-type{
+            text-align: left;
+            width: 40%;
+        }
+        caption,thead{
+            font-weight: 600;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<table summary="tabla de cursos">
+
+<caption>Cursos de diseño gráfico</caption>
+
+<colgroup span="2"></colgroup>
+<colgroup id="col-plazas" span="1"></colgroup>
+
+<thead>
+    <tr>
+        <td>Nombre</td>
+        <td>Horas</td>
+        <td>Plazas</td>
+        <td>Horario</td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Introducción a XHTML</td>
+        <td>20</td>
+        <td>20</td>
+        <td>09:00 - 13:00</td>
+    </tr>
+    
+    <tr>
+        <td>CSS avanzado</td>
+        <td>40</td>
+        <td>15</td>
+        <td>16:00 - 20:00</td>
+    </tr>
+    
+    <tr>
+        <td>Taller de usabilidad</td>
+        <td>40</td>
+        <td>10</td>
+        <td>16:00 - 20:00</td>
+    </tr>
+    
+    <tr>
+        <td>Introducción a AJAX</td>
+        <td>60</td>
+        <td>20</td>
+        <td>08:30 - 12:30</td>
+    </tr>
+</tbody>
+
+</table>
+    
+</body>
+</html>

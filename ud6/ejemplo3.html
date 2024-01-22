@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejemplo2</title>
+    <title>ejemplo3</title>
+
     <style type="text/css">
         * {
             box-sizing: border-box;
@@ -20,8 +20,13 @@
         th {
             border: solid 1px black;
             vertical-align: center;
-            padding: 15px;
+            padding: 10px;
         }
+        
+        td:first-child{
+            width: 30%;
+        }
+
 
         td:nth-of-type(2) {
             text-align: center;
@@ -38,12 +43,28 @@
         tfoot{
             text-align: center;
         }
+        #ultm-col{
+            background-color: rgb(114, 255, 138);
+        }
+        tr>td:nth-child(3){
+            background-color: red;
+            /*sale mal porque hay rowspan en la del medio 
+            y por tanto hay menos td, sería mejor en este
+            caso usar colgroup para aplicar el estilo por columna*/
+        }
+        tbody>tr>td:first-of-type:nth-child(1n){
+            background-color: beige;
+        }
+
     </style>
 </head>
 
 <body>
 
     <table summary="Tabla sobre buenas canciones"><!--nombre de la tabla-->
+
+        <colgroup span="2"></colgroup>
+        <colgroup id="ultm-col" span="1"></colgroup>
 
         <caption>Tabla 1.1 canciones potentes.</caption>
 
@@ -84,12 +105,20 @@
             <td>Pendulum</td>
             <td>8</td>
         </tr>
+        <tr>
+            <td>Lejos de las leyes de los hombres</td>
+            <td>El último de la fila</td>
+            <td>9</td>
+        </tr>
+        
+        <tr>
+            <td>Luminosa mañana</td>
+            <td>Triana</td>
+            <td>10</td>
+        </tr>
     </tbody>
     <tfoot>
         <td colspan="3">Tabla locurologa</td>
     </tfoot>
     </table>
-
-</body>
-
 </html>
