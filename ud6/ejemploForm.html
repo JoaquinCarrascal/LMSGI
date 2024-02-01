@@ -13,11 +13,13 @@
             padding: 10px;
             width: 200px;
             margin: 0 auto;
+            
         }
         label,input{
             text-align: center;
             display: flex; 
         }
+        
 
     </style>
 
@@ -27,8 +29,12 @@
     <h1>Formulario de registro.</h1>
     <form name="registro" method="" action="" autocomplete="on" novalidate enctype="multipart/form-data">
         
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre">
+        <label for="foto">Introduzca una foto aquí:</label>
+        <input type="file" name="foto" id="foto" accept="image/*">
+        <label for="color">Colorines</label>
+        <input type="color" name="color" id="color">
+        <label type="email">Introduzca aquí su email.</label>
+        <input type="email" name="email" id="email">
 
     </form>
 
