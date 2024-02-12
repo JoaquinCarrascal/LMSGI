@@ -4,485 +4,409 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ejercicio5</title>
+
     <style type="text/css">
         * {
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
-            width: 100%;
             border-collapse: collapse;
+            border: solid 1px black;
+            background-color: white;
         }
 
-        th,
-        td {
-            padding: 6px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f7f6f6;
-            font-weight: 600;
-        }
-        thead{
-            border-bottom: solid red 3px;
-        }
-        thead>tr:first-child{
-            border-bottom: 2px solid grey;
-        }
-
-        thead>tr:first-child>th {
-            text-align: center;
-        }
-        .imagen-equipo>img{
-            width: 30px;
-        }
-        .imagen-equipo{
-            margin: 0 7px 0 20px;
-        }
-        tbody>tr>td:first-of-type{
+        tr {
             display: flex;
-            align-items: center;
-            font-weight: bold;
-            margin-right: 20px;
-            min-width: 210px;
-            max-width: 230px;
-            
         }
-        tbody>tr:nth-child(odd){
-            background-color: rgb(231, 231, 231);
-        }
-        .barraverde{
-            width: 5px;
-            height: 40px;
-            background-color: rgb(0, 173, 0);
-            margin-right: 10px;
-        }
-        .barraamarilla{
-            width: 5px;
-            height: 40px;
-            background-color: rgb(255, 166, 0);
-            margin-right: 10px;
-        }
-        .barranone{
-            width: 5px;
-            height: 40px;
-            margin-right: 10px;
-        }
-        .barrarroja{
-            width: 5px;
-            height: 40px;
-            background-color: rgb(255, 0, 0);
-            margin-right: 10px;
-        }
-        
 
+        td {
+            display: flex;
+            width: 80px;
+            height: 80px;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+
+        div {
+            width: 30%;
+            height: 30%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        tr:last-of-type td {
+            border: inherit;
+            background-color: inherit;
+        }
+
+        tr:nth-child(odd) td:nth-child(odd) {
+            background-color: antiquewhite;
+        }
+
+        tr:nth-child(even) td:first-child,tr:nth-child(odd) td:first-child {
+            background-color: inherit;
+            border: inherit;
+        }
+
+        td:nth-of-type(odd) {
+            background-color: orange;
+        }
+
+        tr:nth-child(odd) td:nth-of-type(even) {
+            background-color: orange;
+        }
+
+        tr:first-child td:nth-child(even),tr:first-child td:nth-child(odd) {
+            border: inherit;
+            background-color: inherit;
+        }
+
+        tr:nth-child(even) td:last-child,tr:nth-child(odd) td:last-child {
+            background-color: inherit;
+            border: inherit;
+        }
     </style>
+
 </head>
 
 <body>
 
-    <table>
-        <thead>
-            <tr>
-                <th colspan="8">TOTALES</th>
-                <th colspan="7">EN CASA</th>
-                <th colspan="7">FUERA</th>
-            </tr>
-            <tr>
-                <th>EQUIPOS</th>
-                <th>PT</th>
-                <th>PJ</th>
-                <th>PG</th>
-                <th>PE</th>
-                <th>PP</th>
-                <th>GF</th>
-                <th>GC</th>
-                <th>PT</th>
-                <th>PJ</th>
-                <th>PG</th>
-                <th>PE</th>
-                <th>PP</th>
-                <th>GF</th>
-                <th>GC</th>
-                <th>PT</th>
-                <th>PJ</th>
-                <th>PG</th>
-                <th>PE</th>
-                <th>PP</th>
-                <th>GF</th>
-                <th>GC</th>
-            </tr>
-        </thead>
+    <table summary="tablero de ajedrez">
+
         <tbody>
             <tr>
                 <td>
-                    <div class="barraverde"></div>1<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/fcb.png"></div>Barcelona
+                    <div></div>
                 </td>
-                <td>54</td>
-                <td>24</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a</div>
+                </td>
+                <td>
+                    <div>b</div>
+                </td>
+                <td>
+                    <div>c</div>
+                </td>
+                <td>
+                    <div>d</div>
+                </td>
+                <td>
+                    <div>e</div>
+                </td>
+                <td>
+                    <div>f</div>
+                </td>
+                <td>
+                    <div>g</div>
+                </td>
+                <td>
+                    <div>h</div>
+                </td>
+                <td>
+                    <div></div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barraverde"></div>2<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/ala.png"></div>Alavés
+                    <div>8</div>
                 </td>
-                <td>53</td>
-                <td>24</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a8</div>
+                </td>
+                <td>
+                    <div>b8</div>
+                </td>
+                <td>
+                    <div>c8</div>
+                </td>
+                <td>
+                    <div>d8</div>
+                </td>
+                <td>
+                    <div>e8</div>
+                </td>
+                <td>
+                    <div>f8</div>
+                </td>
+                <td>
+                    <div>g8</div>
+                </td>
+                <td>
+                    <div>h8</div>
+                </td>
+                <td>
+                    <div>8</div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barraverde"></div>3<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/alm.png"></div>Almería
+                    <div>7</div>
                 </td>
-                <td>50</td>
-                <td>24</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a7</div>
+                </td>
+                <td>
+                    <div>b7</div>
+                </td>
+                <td>
+                    <div>c7</div>
+                </td>
+                <td>
+                    <div>d7</div>
+                </td>
+                <td>
+                    <div>e7</div>
+                </td>
+                <td>
+                    <div>f7</div>
+                </td>
+                <td>
+                    <div>g7</div>
+                </td>
+                <td>
+                    <div>h7</div>
+                </td>
+                <td>
+                    <div>7</div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barraamarilla"></div>4<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/ath.png"></div>Atlético Bilbao
+                    <div>6</div>
                 </td>
-                <td>48</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a6</div>
+                </td>
+                <td>
+                    <div>b6</div>
+                </td>
+                <td>
+                    <div>c6</div>
+                </td>
+                <td>
+                    <div>d6</div>
+                </td>
+                <td>
+                    <div>e6</div>
+                </td>
+                <td>
+                    <div>f6</div>
+                </td>
+                <td>
+                    <div>g6</div>
+                </td>
+                <td>
+                    <div>h6</div>
+                </td>
+                <td>
+                    <div>6</div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barraamarilla"></div>5<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/bet.png"></div>Real Betis
+                    <div>5</div>
                 </td>
-                <td>47</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a5</div>
+                </td>
+                <td>
+                    <div>b5</div>
+                </td>
+                <td>
+                    <div>c5</div>
+                </td>
+                <td>
+                    <div>d5</div>
+                </td>
+                <td>
+                    <div>e5</div>
+                </td>
+                <td>
+                    <div>f5</div>
+                </td>
+                <td>
+                    <div>g5</div>
+                </td>
+                <td>
+                    <div>h5</div>
+                </td>
+                <td>
+                    <div>5</div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barranone"></div>6<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/cad.png"></div>Cádiz FC
+                    <div>4</div>
                 </td>
-                <td>45</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a4</div>
+                </td>
+                <td>
+                    <div>b4</div>
+                </td>
+                <td>
+                    <div>c4</div>
+                </td>
+                <td>
+                    <div>d4</div>
+                </td>
+                <td>
+                    <div>e4</div>
+                </td>
+                <td>
+                    <div>f4</div>
+                </td>
+                <td>
+                    <div>g4</div>
+                </td>
+                <td>
+                    <div>h4</div>
+                </td>
+                <td>
+                    <div>4</div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barranone"></div>7<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/cel.png"></div>Celta de Vigo
+                    <div>3</div>
                 </td>
-                <td>44</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a3</div>
+                </td>
+                <td>
+                    <div>b3</div>
+                </td>
+                <td>
+                    <div>c3</div>
+                </td>
+                <td>
+                    <div>d3</div>
+                </td>
+                <td>
+                    <div>e3</div>
+                </td>
+                <td>
+                    <div>f3</div>
+                </td>
+                <td>
+                    <div>g3</div>
+                </td>
+                <td>
+                    <div>h3</div>
+                </td>
+                <td>
+                    <div>3</div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barranone"></div>8<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/get.png"></div>Getafe FC
+                    <div>2</div>
                 </td>
-                <td>44</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a2</div>
+                </td>
+                <td>
+                    <div>b2</div>
+                </td>
+                <td>
+                    <div>c2</div>
+                </td>
+                <td>
+                    <div>d2</div>
+                </td>
+                <td>
+                    <div>e2</div>
+                </td>
+                <td>
+                    <div>f2</div>
+                </td>
+                <td>
+                    <div>g2</div>
+                </td>
+                <td>
+                    <div>h2</div>
+                </td>
+                <td>
+                    <div>2</div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barranone"></div>9<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/gir.png"></div>Girona FC
+                    <div>1</div>
                 </td>
-                <td>41</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>a1</div>
+                </td>
+                <td>
+                    <div>b1</div>
+                </td>
+                <td>
+                    <div>c1</div>
+                </td>
+                <td>
+                    <div>d1</div>
+                </td>
+                <td>
+                    <div>e1</div>
+                </td>
+                <td>
+                    <div>f1</div>
+                </td>
+                <td>
+                    <div>g1</div>
+                </td>
+                <td>
+                    <div>h1</div>
+                </td>
+                <td>
+                    <div>1</div>
+                </td>
             </tr>
+
             <tr>
                 <td>
-                    <div class="barranone"></div>10<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/sfc.png"></div>Sevilla FC
+                    <div></div>
                 </td>
-                <td>40</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
-            </tr>
-            <tr>
                 <td>
-                    <div class="barrarroja"></div>11<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/gra.png"></div>Granada FC
+                    <div>a</div>
                 </td>
-                <td>45</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
-            </tr>
-            <tr>
                 <td>
-                    <div class="barrarroja"></div>12<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/vil.png"></div>Villareal FC
+                    <div>b</div>
                 </td>
-                <td>45</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
-            </tr>
-            <tr>
                 <td>
-                    <div class="barrarroja"></div>13<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/rso.png"></div>Real Sociedad
+                    <div>c</div>
                 </td>
-                <td>45</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
-            </tr>
-            <tr>
                 <td>
-                    <div class="barrarroja"></div>14<div class="imagen-equipo"><img alt="logoequipo" src="./IMG/osa.png"></div>Osasuna FC
+                    <div>d</div>
                 </td>
-                <td>45</td>
-                <td>22</td>
-                <td>16</td>
-                <td>6</td>
-                <td>2</td>
-                <td>61</td>
-                <td>23</td>
-                <td>30</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1</td>
-                <td>0</td>
-                <td>31</td>
-                <td>11</td>
-                <td>24</td>
-                <td>15</td>
-                <td>7</td>
-                <td>5</td>
-                <td>3</td>
-                <td>30</td>
-                <td>12</td>
+                <td>
+                    <div>e</div>
+                </td>
+                <td>
+                    <div>f</div>
+                </td>
+                <td>
+                    <div>g</div>
+                </td>
+                <td>
+                    <div>h</div>
+                </td>
+                <td>
+                    <div></div>
+                </td>
             </tr>
-            
         </tbody>
+
     </table>
 
 </body>
