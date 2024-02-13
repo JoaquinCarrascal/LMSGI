@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1</title>    
+    <style type="text/css">
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 100px auto;
+        }
+        .form-envoltorio {
+            margin-bottom: 15px;
+        }
+        .form-envoltorio label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-envoltorio input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgb(189, 189, 189);
+            border-radius: 5px;
+        }
+        .form-envoltorio select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgb(170, 170, 170);
+            border-radius: 5px;
+        }
+        .form-envoltorio button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form name="formulario-basico">
+        <div class="form-envoltorio">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="form-envoltorio">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+        </div>
+        <div class="form-envoltorio">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad">
+        </div>
+        <div class="form-envoltorio">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-envoltorio">
+            <label for="navegador">Mi navegador favorito:</label>
+            <select id="navegador" name="navegador">
+                <option value="clean" selected></option>
+                <option value="chrome">Google Chrome</option>
+                <option value="firefox">Mozilla Firefox</option>
+                <option value="safari">Apple Safari</option>
+                <option value="edge">Microsoft Edge</option>
+                <option value="tor">Tor</option>
+            </select>
+        </div>
+        <div class="form-envoltorio">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

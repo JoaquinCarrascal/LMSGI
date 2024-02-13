@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 250px;
+        }
+        .form-envoltorio {
+            margin-bottom: 15px;
+        }
+        .form-envoltorio label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-envoltorio input, .form-envoltorio select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgb(210, 210, 210);
+            border-radius: 5px;
+        }
+        .form-envoltorio button {
+            background-color: #0044ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 0px 20px;
+        }
+        .form-envoltorio .aficiones{
+            width: 400px;
+            display: flex;
+        }
+        .aficiones label{
+            flex: 1 1 100%;
+        }
+        
+        .aficiones input{
+            flex: 0 0 10%;
+        }
+        .form-envoltorio button img{
+            width: 50px;
+        }
+        .sexo-edit{
+            display: flex;
+        }
+        .sexo-edit label{
+            flex: 1 1 100%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <form name="formulario-extenso">
+        <div class="form-envoltorio">
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="form-envoltorio">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-envoltorio">
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario">
+        </div>
+        <div class="form-envoltorio">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+        </div>
+        <div class="form-envoltorio">
+            <label for="repetirContrasena">Repetir contraseña:</label>
+            <input type="password" id="repetirContrasena" name="repetirContrasena">
+        </div>
+        <div class="form-envoltorio">
+            <label for="sexo">Sexo:</label>
+            <div class="sexo-edit">
+            <label for="sexo">Hombre</label>
+            <input type="radio" id="hombre" name="sexo" value="m">
+            </div>
+            <div class="sexo-edit">
+            <label for="sexo">Mujer</label>
+            <input type="radio" id="mujer" name="sexo" value="f">
+            </div>
+        </div>
+        <div class="form-envoltorio">
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        </div>
+        <div class="form-envoltorio">
+            <label>Aficiones:</label>
+
+            <div class="aficiones">
+            <label for="aficion1">Jugar a la pelota</label>
+            <input type="checkbox" id="aficion1" name="aficion1">
+            </div>
+
+            <div class="aficiones">
+            <label for="aficion2">Salir, beber, el rollo de siempre</label>
+            <input type="checkbox" id="aficion2" name="aficion2">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion3">Hacer pájaros de barro y echarlos a volar</label>
+                <input type="checkbox" id="aficion3" name="aficion3">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion4">Hacer cubos de rubik</label>
+                <input type="checkbox" id="aficion4" name="aficion4">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion5">Escuchar los temazos de Rumba 3</label>
+                <input type="checkbox" id="aficion5" name="aficion5">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion6">Ir al lago como Jesús de la Rosa</label>
+                <input type="checkbox" id="aficion6" name="aficion6">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion7">Apatrullar la ciudad como el Fary</label>
+                <input type="checkbox" id="aficion7" name="aficion7">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion8">Ir a la escuela de calor de Radio Futura</label>
+                <input type="checkbox" id="aficion8" name="aficion8">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion9">Dejar correr al agua que no es de beber</label>
+                <input type="checkbox" id="aficion9" name="aficion9">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion10">Emocionarte con Bootstrap</label>
+                <input type="checkbox" id="aficion10" name="aficion10">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion11">Ir a un concierto de Café Quijano</label>
+                <input type="checkbox" id="aficion11" name="aficion11">
+            </div>
+
+            <div class="aficiones">
+                <label for="aficion12">Preguntar a Raphael ¿qué sabe nadie?</label>
+                <input type="checkbox" id="aficion12" name="aficion12">
+            </div>
+            
+        </div>
+        <div class="form-envoltorio">
+            <button type="submit">
+                <img src="./IMG/As picas.png" alt="Enviar">
+            </button>
+        </div>
+    </form>
+</body>
+</html>
