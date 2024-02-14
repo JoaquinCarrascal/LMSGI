@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>NoMePongoEsoNiLoc@</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	/*	COLORES: ;
+				- Fondo general:  #FF6F61;
+				- Fondos naranjas: #FE840E;
+				- Amarillos:  yellow;
+				- Blancos:  white;
+				- Azul:  blueviolet;
+
+			FUENTE:  Lacquer (está incluida a través de la etiqueta link);
+		*/
+	* {
+		box-sizing: border-box;
+		background-color: rgb(252, 243, 255);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10pt;
+	}
+
+
+
+	h1,
+	h2 {
+		text-align: center;
+		font-family: Lacquer;
+		color: rgb(69, 32, 169);
+		font-size: 16pt;
+	}
+
+
+
+	.columna-grupo {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 25%;
+	}
+
+	.row-grupo {
+		display: flex;
+		flex-direction: row;
+		margin: 0px;
+		padding: 0px;
+
+	}
+
+	.doble-col {
+		display: flex;
+	}
+
+	.doble-col fieldset {
+		flex: 1 1 50%;
+		margin: 10px;
+	}
+
+	#caja-principal {
+		margin-bottom: 20px;
+	}
+
+	#formulario1 {
+		border: solid 3px rgb(68, 0, 255);
+		padding: 5px;
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	#bloque1 {
+		margin-right: 5px;
+	}
+
+	#bloque2 {
+		margin-left: 5px;
+	}
+
+	fieldset {
+		border: solid 1px rgb(68, 0, 255);
+	}
+
+	#formulario1,fieldset,input,div,label,legend,tr,td,th{
+		background-color: rgb(232, 219, 255);
+	}
+
+	input[type="submit"] {
+		background-color: rgb(220, 220, 220);
+		border-radius: 5px;
+		margin: 15px 0px 20px 10px;
+	}
+
+	table {
+		border-collapse: collapse;
+		border: solid 3px rgb(68, 0, 255);
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	td,
+	th {
+		border: solid 1px rgb(68, 0, 255);
+		padding: 3px;
+		text-align: center;
+	}
+
+	td:first-of-type,
+	th:first-of-type {
+		width: 50%;
+	}
+
+	td,
+	th {
+		width: 20%;
+	}
+
+	td:last-of-type {
+		width: 100%;
+	}
+
+	tfoot>tr>td {
+		text-align: left;
+		font-size: 10pt;
+	}
+</style>
+
+<body>
+	<h1>NoMePongoEsoNiLoc@</h1>
+	<h2>Alquiler online de disfraces</h2>
+	<form id="formulario1">
+
+		<fieldset id="caja-principal">
+
+			<legend>Elija su disfraz</legend>
+			<label for="">¿Qué tipo de alquiler desea?</label>
+			<select name="tipo-traje" id="tipo-traje">
+				<option value="c">Completo</option>
+				<option value="m">Máscara</option>
+				<option value="t">Traje</option>
+			</select><br><br>
+
+			<label for="genero">Indique su género</label>
+			<input type="radio" name="genero" value="m">Mujer
+			<input type="radio" name="genero" value="h">Hombre
+			<input type="radio" name="genero" value="n">No binario<br><br>
+
+			<label for="fecha-inicio">Inicio de la reserva</label>
+			<input type="datetime-local" name="fecha-inicio" id="fecha-inicio">
+			<label for="fecha-fin">Fin de la reserva</label>
+			<input type="datetime-local" name="fecha-fin" id="fecha-fin"><br><br>
+
+			<label for="disfraz">¿Qué temática de disfraz desea alquilar?</label><br>
+
+			<div class="row-grupo">
+
+				<div class="columna-grupo">
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Animales</label>
+					</div>
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Profesiones</label>
+					</div>
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Deportes</label>
+					</div>
+				</div>
+
+				<div class="columna-grupo">
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Plantas</label>
+					</div>
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Personajes de películas</label>
+					</div>
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Personajes de libros</label>
+					</div>
+				</div>
+
+				<div class="columna-grupo">
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Personajes de dibujos animados</label>
+					</div>
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Personajes históricos</label>
+					</div>
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Objetos cotidianos</label>
+					</div>
+				</div>
+
+				<div class="columna-grupo">
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Vehículos</label>
+					</div>
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Otras culturas</label>
+					</div>
+					<div class="row-grupo">
+						<input type="checkbox">
+						<label>Inclasificables</label>
+					</div>
+				</div>
+			</div>
+
+			<label for="text">¿Desea indicarnos alguna petición especial?</label><br>
+			<textarea name="text" id="text" cols="40" rows="10"></textarea>
+		</fieldset>
+
+		<div class="doble-col">
+			<fieldset id="bloque1">
+				<legend>Indique sus datos personales</legend>
+				<label for="nombape">Nombre y apellidos</label>
+				<input type="text" name="nombape" id="nombape" placeholder="nombre y apellidos"><br><br>
+				<label for="correo">Correo Electrónico</label>
+				<input type="email" name="correo" id="correo" placeholder="correo@gmail.com"><br><br>
+				<label for="codpostal">Código Postal</label>
+				<input type="text" name="codpostal" id="codpostal" maxlength="5" size="5" pattern="[0-9]{5}" required
+					placeholder="41024"><br><br>
+				<label for="tlf">Teléfono de contacto</label>
+				<input type="text" name="tlf" id="tlf" maxlength="9" size="9" pattern="[0-9]{9}" required
+					placeholder="954123123"><br>
+
+			</fieldset>
+			<fieldset id="bloque2">
+				<legend>Indique sus datos de pago</legend>
+				<label for="tarjeta">Número de tarjeta</label>
+				<input type="text" name="tarjeta" id="tarjeta" maxlength="16" size="16" pattern="[0-9]{16}" required
+					placeholder="16 cifras sin espacios"><br><br>
+				<label for="fcad">Fecha de Caducidad</label>
+				<input type="text" name="fcad" id="fcad"><br><br>
+				<label for="ccv">Código de Seguridad (CCV)</label>
+				<input type="text" name="ccv" id="ccv" maxlength="3" size="3" pattern="[0-9]{3}" required
+					placeholder="123"><br><br>
+			</fieldset>
+		</div>
+
+		<input type="submit" value="Solicitar Reserva">
+		<input type="submit" value="Borrar datos">
+
+	</form>
+
+	<hr />
+
+	<table>
+		<h2>Tarifas 2022</h2>
+
+		<thead>
+			<tr>
+				<th>Categoría</th>
+				<th>Traje</th>
+				<th>Máscara</th>
+				<th>Completo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Animales, plantas, objetos</td>
+				<td>15€</td>
+				<td>15€</td>
+				<td>25€</td>
+			</tr>
+
+			<tr>
+				<td>Personas y personajes</td>
+				<td>10€</td>
+				<td>10€</td>
+				<td>15€</td>
+			</tr>
+
+			<tr>
+				<td>Vehículos</td>
+				<td>15€</td>
+				<td>15€</td>
+				<td>25€</td>
+			</tr>
+
+			<tr>
+				<td>Inclasificables</td>
+				<td>20€</td>
+				<td>20€</td>
+				<td>35€</td>
+			</tr>
+
+			<tr>
+				<td rowspan="2">Envío</td>
+				<td colspan="3">Península: 10€.</td>
+			</tr>
+			<tr>
+				<td colspan="3">Otros destinos: consultar</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">NOTA: Todos los precios son por día de alquiler, incluyen IVA, servicio de limpieza y
+					desinfección. Envío no incluido</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>
