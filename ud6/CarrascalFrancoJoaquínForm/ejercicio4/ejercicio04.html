@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio04</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px auto;
+        }
+
+        #login-form {
+            width: 80%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: #535353;
+            margin-bottom: 20px;
+        }
+
+        .form-envoltorio {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #535353;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #ded3d3;
+            border-radius: 5px;
+        }
+
+        #boton-enviar {
+            background-color: #007604;
+            color: white;
+            border: none;
+        }
+
+        #login-form:hover{
+            background-color: #FF9;
+        }
+        input[type="text"]:focus{
+            border: solid 2px #E6B700;
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="login-form">
+        <form name="formulario-registro" action="#" method="post">
+            <fieldset>
+
+                <legend>Ingresa tus datos</legend>
+
+                <div class="form-envoltorio">
+                    <label for="username">Nombre:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+
+                <div class="form-envoltorio">
+                    <label for="apellido1">Primer apellido:</label>
+                    <input type="text" id="apellido1" name="apellido1">
+                </div>
+
+                <input id="boton-enviar" type="submit" value=">>Enviar datos<<">
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
