@@ -12,6 +12,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <link href="../Tema/tema_bootstrap.css" type="text/css" rel="stylesheet">
+
     <style type="text/css">
         @media screen and (min-width:900px) {
             body {
@@ -32,21 +34,89 @@
                 background-size: cover;
                 height: 100vh;
             }
-
         }
-
-        button{
-            display: block;
-            margin: 100px auto;
-        }
-
     </style>
 
 </head>
 
 <body>
 
-    <button type="button" class="btn btn-outline-primary btn-dark">Empieza a viajar</button>
+    <div id="envoltorio" class="container-fluid">
+        <div class="row d-flex justify-content-center mt-3">
+
+            <button class="col-3 col-lg-3 btn btn-dark m-1" type="button" data-bs-toggle="modal"
+                data-bs-target="#myModal">
+                Iniciar sesión
+            </button>
+            <button class="col-3 col-lg-3 btn btn-primary m-1" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanv">
+                Crear cuenta
+            </button>
+
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Inicio de sesión</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@email.com"
+                                name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="************" name="pswd">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember">Recordarme en este
+                                equipo
+                            </label>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-success">Iniciar sesion</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-bottom bg-light" id="offcanv">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Creación de cuenta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            
+
+            <div class="d-flex justify-content-end"">
+                <button type=" submit" class="btn btn-secondary">Crear cuenta</button>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
