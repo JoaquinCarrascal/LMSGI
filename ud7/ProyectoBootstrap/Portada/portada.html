@@ -41,83 +41,168 @@
 
 <body>
 
-    <div id="envoltorio" class="container-fluid">
-        <div class="row d-flex justify-content-center mt-3">
+    <div class="alert alert-primary alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>¡Aprovecha!</strong> Acabamos de ofertar dos viajes nuevos
+    </div>
 
-            <button class="col-3 col-lg-3 btn btn-dark m-1" type="button" data-bs-toggle="modal"
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-around">
+
+            <button class="col-3 col-lg-2 btn btn-primary m-1 p-2" type="button" data-bs-toggle="modal"
                 data-bs-target="#myModal">
-                Iniciar sesión
-            </button>
-            <button class="col-3 col-lg-3 btn btn-primary m-1" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanv">
                 Crear cuenta
+            </button>
+
+            <button class="col-3 col-lg-2 btn btn-primary m-1 p-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanv">
+                Iniciar sesión
             </button>
 
         </div>
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="myModal">
+    <div class="modal fade" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content bg-light">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Inicio de sesión</h4>
+                    <h4 class="modal-title">Creación de cuenta</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form action="/action_page.php">
-                        <div class="mb-3 mt-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="correo@email.com"
-                                name="email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pwd" class="form-label">Contraseña:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="************" name="pswd">
-                        </div>
-                        <div class="form-check mb-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" name="remember">Recordarme en este
-                                equipo
-                            </label>
-                        </div>
 
-                        <div class="d-flex justify-content-end">
-                            <button type="submit" class="btn btn-success">Iniciar sesion</button>
-                        </div>
+                    <form action="/action_page.php" class="mt-0">
 
+                        <div class="container-fluid">
+                            <div class="row">
+
+                                <div class="mb-1 col-12 col-md-5">
+                                    <label for="name" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control p-2" id="name" name="name">
+                                </div>
+
+                                <div class="mb-1 col-12 col-md-7">
+                                    <label for="surname" class="form-label">Apellidos:</label>
+                                    <input type="text" class="form-control p-2" id="surname" name="surname">
+                                </div>
+
+                                <div class="mb-1 col-12 col-md-8">
+                                    <label for="home" class="form-label">Domicilio:</label>
+                                    <input type="text" class="form-control p-2" id="home" placeholder="Nº XXX C/ XXX"
+                                        name="home">
+                                </div>
+
+                                <div class="mb-1 col-12 col-md-4">
+                                    <label for="city" class="form-label">Localidad:</label>
+                                    <input type="text" class="form-control p-2" id="city" name="city">
+                                </div>
+
+                                <div class="mb-1 col-12">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control p-2" id="email"
+                                        placeholder="correo@email.com" name="email">
+                                </div>
+
+
+                                <div class="mb-1 col-12 col-md-6">
+                                    <label for="pwd" class="form-label">Contraseña:</label>
+                                    <input type="password" class="form-control p-2" id="pwd" placeholder="************"
+                                        name="pswd">
+                                </div>
+
+                                <div class="mb-1 col-12 col-md-6">
+                                    <label for="pwd2" class="form-label">Repetir contraseña:</label>
+                                    <input type="password" class="form-control p-2" id="pwd2" placeholder="************"
+                                        name="pswd2">
+                                </div>
+
+                                <label for="sex" class="form-label">Sexo:</label>
+
+                                <div class="mb-1 col-12 col-md-3">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="sex" value="H"> Hombre
+                                    </label>
+                                </div>
+
+                                <div class="mb-1 col-12 col-md-3">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="sex" value="M"> Mujer
+                                    </label>
+                                </div>
+
+                                <div class="mb-1 col-12 col-md-5">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="sex" value="N"> No especificado
+                                    </label>
+                                </div>
+
+                                <div class="my-1">
+                                    <label for="comment">Observaciones:</label>
+                                    <textarea class="form-control" rows="2" id="comment" name="text"
+                                        placeholder="Escriba aquí..."></textarea>
+                                </div>
+
+                                <div class="col-6">
+                                    <button type="reset" class="btn btn-secondary py-2 mt-2">Limpiar formulario</button>
+                                </div>
+
+                                <div class="col-6">
+                                    <button type=" submit" class="btn btn-secondary py-2 mt-2">Crear cuenta</button>
+                                </div>
+
+                            </div>
+                        </div>
                     </form>
                 </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer d-flex justify-content-center">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-
             </div>
         </div>
     </div>
 
     <div class="offcanvas offcanvas-bottom bg-light" id="offcanv">
-        <div class="offcanvas-header">
-            <h1 class="offcanvas-title">Creación de cuenta</h1>
+        <div class="offcanvas-header py-2">
+            <h5 class="offcanvas-title">Inicio de sesión</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
 
-            
+            <form action="/action_page.php" class="mt-0">
 
-            <div class="d-flex justify-content-end"">
-                <button type=" submit" class="btn btn-secondary">Crear cuenta</button>
-            </div>
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center mb-md-4">
 
+                        <div class="mb-1 col-12 col-md-6">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control p-2" id="email" placeholder="correo@email.com"
+                                name="email">
+                        </div>
+
+                        <div class="mb-1 col-12 col-md-6">
+                            <label for="pwd" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control p-2" id="pwd" placeholder="************"
+                                name="pswd">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-check mb-1 mt-2 mt-md-1">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember">Recordarme en este equipo
+                    </label>
+                </div>
+
+                <div class="d-flex justify-content-end mt-md-2">
+                    <button type="submit" class="btn btn-success py-2">Iniciar sesion</button>
+                </div>
+
+            </form>
         </div>
     </div>
 
 </body>
-
 </html>
