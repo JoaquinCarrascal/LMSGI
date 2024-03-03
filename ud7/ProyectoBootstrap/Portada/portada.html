@@ -49,12 +49,12 @@
     <div class="container-fluid">
         <div class="row d-flex justify-content-around">
 
-            <button class="col-3 col-lg-2 btn btn-primary m-1 p-2" type="button" data-bs-toggle="modal"
+            <button class="col-3 col-lg-2 btn btn-primary m-1 p-2 rounded-3" type="button" data-bs-toggle="modal"
                 data-bs-target="#myModal">
                 Crear cuenta
             </button>
 
-            <button class="col-3 col-lg-2 btn btn-primary m-1 p-2" type="button" data-bs-toggle="offcanvas"
+            <button class="col-3 col-lg-2 btn btn-primary m-1 p-2 rounded-3" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanv">
                 Iniciar sesión
             </button>
@@ -62,18 +62,15 @@
         </div>
     </div>
 
-    <!-- The Modal -->
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content bg-light">
-
-                <!-- Modal Header -->
+ 
                 <div class="modal-header">
                     <h4 class="modal-title">Creación de cuenta</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <!-- Modal body -->
                 <div class="modal-body">
 
                     <form action="/action_page.php" class="mt-0">
@@ -123,21 +120,21 @@
 
                                 <label for="sex" class="form-label">Sexo:</label>
 
-                                <div class="mb-1 col-12 col-md-3">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="sex" value="H"> Hombre
+                                <div class="form-check mb-1 col-12 col-md-3">
+                                    <label class="form-check-label" for="hombre">
+                                        <input class="form-check-input" id="hombre" type="radio" name="sex" value="H"> Hombre
                                     </label>
                                 </div>
 
-                                <div class="mb-1 col-12 col-md-3">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="sex" value="M"> Mujer
+                                <div class="form-check mb-1 col-12 col-md-3">
+                                    <label class="form-check-label" for="mujer">
+                                        <input class="form-check-input" type="radio" id="mujer" name="sex" value="M"> Mujer
                                     </label>
                                 </div>
 
-                                <div class="mb-1 col-12 col-md-5">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="sex" value="N"> No especificado
+                                <div class="form-check mb-1 col-12 col-md-5">
+                                    <label class="form-check-label" for="noindicado">
+                                        <input class="form-check-input" type="radio" id="noindicado" name="sex" value="N"> No especificado
                                     </label>
                                 </div>
 
@@ -148,11 +145,11 @@
                                 </div>
                                 
                                 <div class="col-6">
-                                    <button type="reset" class="btn btn-secondary py-2 mt-2">Limpiar formulario</button>
+                                    <button type="reset" class="btn btn-secondary py-2 mt-2 rounded-3">Limpiar formulario</button>
                                 </div>
 
                                 <div class="col-6">
-                                    <button type=" submit" class="btn btn-secondary py-2 mt-2">Crear cuenta</button>
+                                    <button type=" submit" class="btn btn-secondary py-2 mt-2 rounded-3">Crear cuenta</button>
                                 </div>
 
                             </div>
@@ -197,7 +194,7 @@
                 </div>
 
                 <div class="d-flex justify-content-end mt-md-2">
-                    <button type="submit" class="btn btn-success py-2">Iniciar sesion</button>
+                    <button type="submit" class="btn btn-success py-2 rounded-3">Iniciar sesion</button>
                 </div>
 
             </form>
