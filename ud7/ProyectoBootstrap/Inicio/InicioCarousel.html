@@ -31,10 +31,10 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class="min-vh-100 m-0 d-flex flex-column">
-<div class="container-fluid mb-5">
+<div class="container-fluid d-block mb-5" id="inicio">
     <nav class="navbar navbar-expand-md navbar-dark fondo fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand py-0" href="#">
+            <a class="navbar-brand py-0" href="../Inicio/InicioCarousel.html#inicio">
                 <img src="../IMG/logo cuadrado pequeño.png" alt="Logo de la compañía" style="width:40px;"
                     class="rounded-2">
             </a>
@@ -44,16 +44,16 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link me-1" href=""><i class="bi bi-house-door"></i> Inicio</a>
+                        <a class="nav-link me-1" href="../Inicio/InicioCarousel.html#inicio"><i class="bi bi-house-door"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-1" href=""><i class="bi bi-blockquote-left"></i> Blog</a>
+                        <a class="nav-link me-1" href="../Inicio/InicioCarousel.html#blog"><i class="bi bi-blockquote-left"></i> Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-1" href=""><i class="bi bi-briefcase"></i> Contrátanos</a>
+                        <a class="nav-link me-1" href="../Contratanos/Contratanos.html"><i class="bi bi-briefcase"></i> Contrátanos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-1" href=""><i class="bi bi-file-earmark-bar-graph"></i>
+                        <a class="nav-link me-1" href="../FAQ/FAQ.html"><i class="bi bi-file-earmark-bar-graph"></i>
                             FAQ</a>
                     </li>
                 </ul>
@@ -115,6 +115,28 @@
         </button>
     </div>
 
+    <div id="blog" class="container-fluid w-100">
+        <h1>¡No te pierdas el próximo vuelo!</h1>
+        <p>
+            Aquí tienes una pequeña selección de los viajes que gestiona nuestra empresa incluida,
+            la Estación Espacial Gubernamental.
+        </p>
+    </div>
+
+    <div class="container-fluid d-flex mx-auto w-100">
+        <img class="img-fluid mx-auto w-100" src="../IMG/banner-time.png">
+    </div>
+
+    <div id="blog" class="container-fluid w-100 mt-3 pt-3">
+        <h1>Empresa nº1 a nivel mundial en viajes espaciales</h1>
+        <p>Somos el equipo de Ad Astra Per Aspera o simplemente AdAstra, nuestro ansia de exploracion espacial nace,
+            de la necesidad de descubrir lo desconocido, donde nunca llegó el hombre, donde nadie nunca hubiese imaginado ir, allí queremos llegar nosotros,
+            además nosotros pretendemos llevarlo a un nivel más, ofrecemos cursos extensos e intensivos para que cualquiera
+            con el capital suficiente se puede preparar y viajar a los confines del universo, podrías ser tu el primer poblador de un planeta
+            asemejado a la Tierra como ED-234-AUO, solo tú te podrás limitar.
+        </p>
+    </div>
+
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white mt-auto fondo w-100 d-table ">
         <!-- Section: Arriba -->
@@ -138,7 +160,6 @@
                 <a href="" class="text-decoration-none text-white me-3">
                     <i class="bi bi-instagram"></i>
                 </a>
-                
             </div>
             <!-- Right -->
 
@@ -146,62 +167,55 @@
         <!-- Section: Arriba fin -->
 
         <!-- Section: Links  -->
-        <section class="">
+        <section>
             <div class="container text-center text-md-start mt-3">
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-3">
+                    <div class="col-md-3 mx-auto mb-3">
                         <!-- Content -->
-                        <h6 class="text-uppercase fw-bold border-bottom border-secondary border-3">Company name</h6>
+                        <h6 class="text-uppercase fw-bold border-bottom border-secondary border-3">Dónde estamos</h6>
+                        <div class="container">
+                            <img class="img-fluid min-vw-75" src="../IMG/mapa.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto mb-1">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-1 border-bottom border-info border-3">Enlaces</h6>
                         <p>
-                            Here you can use rows and columns to organize your footer
-                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
+                            <a href="https://www.nasa.gov/" target="_blank" class="text-white">Nasa</a>
+                        </p>
+                        <p>
+                            <a href="https://www.spacex.com/" target="_blank" class="text-white">SpaceX</a>
+                        </p>
+                        <p>
+                            <a href="https://triana.salesianos.edu" target="_blank" class="text-white">Salesianos Triana</a>
                         </p>
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-1">
+                    <div class="col-md-3 mx-auto mb-1">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-1 border-bottom border-info border-3">Products</h6>
+                        <h6 class="text-uppercase fw-bold border-bottom border-secondary border-3">Sobre nosotros</h6>
                         <p>
-                            <a href="#!" class="text-white">MDBootstrap</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-white">MDWordPress</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-white">BrandFlow</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-1">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold border-bottom border-secondary border-3">Useful links</h6>
-                        <p>
-                            <a href="#!" class="text-white">Your Account</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-white">Become an Affiliate</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-white">Shipping Rates</a>
+                            Somos una compañía, que surge del ansia por explorar el espacio exterior, actualmente tenemos
+                            más de +50000 accionistas en bolsa.
                         </p>
                         
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
+                    <div class="col-md-4 mx-auto mb-md-0 mb-1">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold border-bottom border-info border-3">Contact</h6>
-                        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <h6 class="text-uppercase fw-bold border-bottom border-info border-3">Contacto</h6>
+                        <p><i class="fas fa-home mr-3"></i> C/ Condes de Bustillo Nº12</p>
+                        <p><i class="fas fa-envelope mr-3"></i> AdAstraPerInfo@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 34 434 567 881</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -213,7 +227,7 @@
         <!-- Copyright -->
         <div class="text-center p-2 bg-info">
             © 2024  Aviso legal:
-            <a class="text-white" href="">MDBootstrap.com</a>
+            <a class="text-white" href="../avisolegal/AvisoLegal.html">Ad Astra Per Aspera</a>
         </div>
         <!-- Copyright -->
     </footer>
