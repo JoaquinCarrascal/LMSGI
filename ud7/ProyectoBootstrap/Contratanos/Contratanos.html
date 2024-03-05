@@ -33,7 +33,7 @@
         <nav class="navbar navbar-expand-md navbar-dark fondo fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand py-0" href="../Inicio/InicioCarousel.html#inicio">
-                    <img src="../IMG/logo cuadrado pequeño.png" alt="Logo de la compañía" style="width:40px;"
+                    <img src="../IMG/logo cuadrado pequeño.png" alt="Logo de la compañía" width="40px"
                         class="rounded-2">
                 </a>
                 <button class="navbar-toggler rounded-2" type="button" data-bs-toggle="collapse"
@@ -58,9 +58,13 @@
                             <a class="nav-link me-1" href="../FAQ/FAQ.html"><i class="bi bi-file-earmark-bar-graph"></i>
                                 FAQ</a>
                         </li>
+                        <li class="nav-item">
+                            <button id="btnOscuro" type="button" class="btn btn-dark p-1 my-1 rounded-2 nav-link"><i
+                                    class="bi bi-back"></i>Modo oscuro</button>
+                        </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2 p-2" type="text" placeholder="Escriba aquí">
+                        <input class="form-control me-2 p-2" type="text" placeholder="Escriba aquí" id="barrabusq">
                         <button class="btn btn-secondary p-2 rounded-2" type="button">Buscar</button>
                     </form>
                 </div>
@@ -299,5 +303,13 @@
     <!-- Footer -->
 
 </body>
+<script>
+    document.querySelector('#btnOscuro').addEventListener('click', cambiarModo);
+    let sigTema = 'dark'
+    function cambiarModo() {
+        document.documentElement.setAttribute('data-bs-theme', sigTema);
+        sigTema = sigTema == 'dark' ? 'light' : 'dark';
+    }
+</script>
 
 </html>

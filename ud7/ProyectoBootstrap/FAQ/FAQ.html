@@ -33,7 +33,7 @@
         <nav class="navbar navbar-expand-md navbar-dark fondo fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand py-0" href="../Inicio/InicioCarousel.html#inicio">
-                    <img src="../IMG/logo cuadrado pequeño.png" alt="Logo de la compañía" style="width:40px;"
+                    <img src="../IMG/logo cuadrado pequeño.png" alt="Logo de la compañía" width="40px"
                         class="rounded-2">
                 </a>
                 <button class="navbar-toggler rounded-2" type="button" data-bs-toggle="collapse"
@@ -58,9 +58,13 @@
                             <a class="nav-link me-1" href="../FAQ/FAQ.html"><i class="bi bi-file-earmark-bar-graph"></i>
                                 FAQ</a>
                         </li>
+                        <li class="nav-item">
+                            <button id="btnOscuro" type="button" class="btn btn-dark p-1 my-1 rounded-2 nav-link"><i
+                                    class="bi bi-back"></i>Modo oscuro</button>
+                        </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2 p-2" type="text" placeholder="Escriba aquí">
+                        <input class="form-control me-2 p-2" type="text" placeholder="Escriba aquí" id="barrabusq">
                         <button class="btn btn-secondary p-2 rounded-2" type="button">Buscar</button>
                     </form>
                 </div>
@@ -120,31 +124,32 @@
 
     <div class="container-fluid">
         <div class="row">
-            <h5 class="col-12">Si la distancia en el espacio se mide en años luz ¿Cuánta distancia recorre la luz en un año?</h5>
-            <p class="col-12" >La luz siempre viaja en el espacio a la misma velocidad, 300.000 km por 
+            <h5 class="col-12">Si la distancia en el espacio se mide en años luz ¿Cuánta distancia recorre la luz en un
+                año?</h5>
+            <p class="col-12">La luz siempre viaja en el espacio a la misma velocidad, 300.000 km por
                 segundo. Así, un año luz equivale a casi 9.500 billones de kilómetros.</p>
         </div>
         <div class="row">
             <h5 class="col-12">¿A qué distancia en kilómetros está el Sol de la Tierra?</h5>
-            <p class="col-12" >Al orbitar alrededor del Sol con una trayectoria elíptica, 
-                la Tierra no siempre está a la misma distancia distancia del Sol, así 
-                que no es fácil dar un número exacto. En su momento más cercano está a 
-                147 millones de kilómetros del Sol, y en el más lejano a unos 152 millones. 
-                Por lo que podemos concluir que, de media, la Tierra está a 150 millones 
+            <p class="col-12">Al orbitar alrededor del Sol con una trayectoria elíptica,
+                la Tierra no siempre está a la misma distancia distancia del Sol, así
+                que no es fácil dar un número exacto. En su momento más cercano está a
+                147 millones de kilómetros del Sol, y en el más lejano a unos 152 millones.
+                Por lo que podemos concluir que, de media, la Tierra está a 150 millones
                 de kilómetros del Sol.</p>
         </div>
         <div class="row">
             <h5 class="col-12">¿Cuál es la segunda estrella más próxima a la Tierra?</h5>
-            <p class="col-12" >Nuestra siguiente estrella “vecina” es Próxima Centauri. 
-                Está a unos 4,22 años luz de la Tierra, ese es el tiempo que tarda su 
+            <p class="col-12">Nuestra siguiente estrella “vecina” es Próxima Centauri.
+                Está a unos 4,22 años luz de la Tierra, ese es el tiempo que tarda su
                 luz en llegar a nosotros.</p>
         </div>
         <div class="row">
             <h5 class="col-12">¿Por qué flotan los astronautas dentro de la Estación Espacial Internacional?</h5>
-            <p class="col-12" >La respuesta más rápida para muchos sería que los astronautas flotan en 
-                la ISS porque no hay gravedad, pero eso no es exacto porque sí que la hay, aunque 
-                con una fuerza de interacción tan pequeña que se llama Microgravedad. 
-                Los astronautas lo perciben como ingravidez total, pero no están tan lejos 
+            <p class="col-12">La respuesta más rápida para muchos sería que los astronautas flotan en
+                la ISS porque no hay gravedad, pero eso no es exacto porque sí que la hay, aunque
+                con una fuerza de interacción tan pequeña que se llama Microgravedad.
+                Los astronautas lo perciben como ingravidez total, pero no están tan lejos
                 de la atmósfera de cualquier cuerpo celeste como para que lo sea.</p>
         </div>
     </div>
@@ -248,5 +253,13 @@
     <!-- Footer -->
 
 </body>
+<script>
+    document.querySelector('#btnOscuro').addEventListener('click', cambiarModo);
+    let sigTema = 'dark'
+    function cambiarModo() {
+        document.documentElement.setAttribute('data-bs-theme', sigTema);
+        sigTema = sigTema == 'dark' ? 'light' : 'dark';
+    }
+</script>
 
 </html>
