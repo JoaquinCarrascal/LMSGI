@@ -11,8 +11,13 @@ for (let x of valores) {
     }
 }
 
-
-
 alert(masLarga);
 
+alert(valores[0]||valores[2]);
+alert(valores[0]&&valores[2]);
 
+alert(valores[1]/valores[4]);
+alert(valores[1]*valores[4]);
+alert(valores[1]-valores[4]);
+alert(valores[1]+valores[4]);
+alert(valores[1]%valores[4]);
