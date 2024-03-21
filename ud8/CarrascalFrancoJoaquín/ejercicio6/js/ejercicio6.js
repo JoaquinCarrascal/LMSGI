@@ -10,4 +10,3 @@ let numDni = dni.substring(0,dni.length-1);
 dni < 0 || numDni > 999999999 ? alert('DNI no válido') 
     : letras[numDni%23] == letra ? alert('Letra correcta') 
     : alert('Letra incorrecta');
-
