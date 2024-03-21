@@ -3,7 +3,7 @@ let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D',
 
 let dni = prompt('Diga su DNI: ');
 
-let letra = dni.substring(dni.length-1);
+let letra = dni.substring(dni.length-1).toUpperCase();
 
 let numDni = dni.substring(0,dni.length-1);
 
